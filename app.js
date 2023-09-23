@@ -41,8 +41,8 @@ app.use(session({
 
 // GOOGLE STRATEGY
 passport.use(new GoogleStrategy({
-    clientID: process.env.Client_ID,
-    clientSecret: process.env.Client_secret,
+    clientID: process.env.clientID,
+    clientSecret: process.env.Clientsecret,
     callbackURL: "http://localhost:3000/auth/google/secrets"
   },
   function(accessToken, refreshToken, profile, cb) {
@@ -58,8 +58,8 @@ passport.use(new GoogleStrategy({
 
 // FACEBOOK STRATEGY
 passport.use(new FacebookStrategy({
-    clientID: process.env.Client_ID_fb,
-    clientSecret: process.env.Client_secret_fb,
+    clientID: process.env.ClientIDfb,
+    clientSecret: process.env.Clientsecretfb,
     callbackURL: "http://localhost:3000/auth/facebook/secrets"
   },
   function(accessToken, refreshToken, profile, cb) {
