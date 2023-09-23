@@ -80,7 +80,7 @@ const mongoose = require("mongoose");
 main().catch(err => console.log(err));
 
 async function main() {
-await mongoose.connect('mongodb+srv://unstable_chad:idkpass13579.@clustertest.cxys5wb.mongodb.net/users_DB');
+await mongoose.connect('mongodb://127.0.0.1:27017/users_DB');
 };
 
 
@@ -351,7 +351,7 @@ app.post("/login", function(req, res){
 
 // LISTEN
 let port = process.env.PORT;
-if (port == null || port == "") {
+if (port == null || port == " ") {
     port = 3000;
 }
 
