@@ -350,6 +350,6 @@ app.post("/login", function(req, res){
 
 
 // LISTEN
-app.listen(process.env.PORT, function(){
+app.listen(3000, function(){
     console.log("Server started on port idk");
 })
