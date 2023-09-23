@@ -350,10 +350,7 @@ app.post("/login", function(req, res){
 
 
 // LISTEN
-// let port = process.env.PORT;
-// if (port == null || port == " ") {
-//     port = 3000;
-// }
+
 
 app.listen(process.env.PORT, function(){
-    console.log(process.env.PORT )});
+    console.log("server running at port 3000" || process.env.PORT )});
